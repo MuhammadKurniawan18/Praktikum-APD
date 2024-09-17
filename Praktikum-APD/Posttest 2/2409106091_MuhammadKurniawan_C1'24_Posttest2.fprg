@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106091_MuhammadKurniawan_C1'24_Posttest2"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-16 08:59:28 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtU1NJT1VQMk87MjAyNC0wOS0xNjswNzoxODowOCBBTTsyNzE0"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtU1NJT1VQMk87MjAyNC0wOS0xNjswODo1OToyOCBBTTszOzI4MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NAMA, NIM" type="String" array="False" size=""/>
+            <declare name="HargaGula" type="Integer" array="False" size=""/>
+            <declare name="Diskon" type="String" array="False" size=""/>
+            <declare name="DiskonGulaku, DiskonManisKita, DiskonGunungMadu" type="Real" array="False" size=""/>
+            <declare name="HargaSetelahDiskonGulaku, HargaSetelahDiskonManisKita, HargaSetelahDiskonGunungMadu" type="Real" array="False" size=""/>
+            <input variable="Nama"/>
+            <input variable="NIM"/>
+            <input variable="HargaGula"/>
+            <assign variable="DiskonGulaku" expression="0.07"/>
+            <assign variable="DiskonManisKita" expression="0.11"/>
+            <assign variable="DiskonGunungMadu" expression="0.13"/>
+            <assign variable="DiskonGulaku" expression="HargaGula*DiskonGulaku"/>
+            <assign variable="DiskonManisKita" expression="HargaGula*DiskonManisKita"/>
+            <assign variable="DiskonGunungMadu" expression="HargaGula*DiskonGunungMadu"/>
+            <assign variable="HargaSetelahDiskonGulaku" expression="HargaGula - DiskonGulaku"/>
+            <assign variable="HargaSetelahDiskonManisKita" expression="HargaGula - DiskonManisKita"/>
+            <assign variable="HargaSetelahDiskonGunungMadu" expression="HargaGula - DiskonGunungMadu"/>
+            <output expression="HargaSetelahDiskonGulaku" newline="True"/>
+            <output expression="HargaSetelahDiskonManisKita" newline="True"/>
+            <output expression="HargaSetelahDiskonGunungMadu" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
