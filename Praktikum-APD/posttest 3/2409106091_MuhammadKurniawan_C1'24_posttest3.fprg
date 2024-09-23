@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106091_MuhammadKurniawan_C1'24_posttest3"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-22 10:34:12 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtU1NJT1VQMk87MjAyNC0wOS0yMTswNToxOToyMCBBTTsyNzAz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtU1NJT1VQMk87MjAyNC0wOS0yMjsxMDozNDoxMiBBTTs1OzI4MTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NAMA" type="String" array="False" size=""/>
+            <declare name="Hari" type="String" array="False" size=""/>
+            <declare name="Uang" type="Integer" array="False" size=""/>
+            <declare name="Hargatiket" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan nama anda&quot;" newline="True"/>
+            <input variable="NAMA"/>
+            <output expression="&quot;Masukan hari&quot;" newline="True"/>
+            <input variable="Hari"/>
+            <output expression="&quot;Uang yang anda miliki&quot;" newline="True"/>
+            <input variable="Uang"/>
+            <if expression="Hari == &quot;Senin&quot; or Hari == &quot;Selasa&quot; or Hari == &quot;Rabu&quot; or Hari == &quot;Kamis&quot;">
+                <then>
+                    <if expression="Uang &gt;= 40000">
+                        <then>
+                            <output expression="&quot;Cie uangnya cukup buat beli tiket di hari&quot;" newline="True"/>
+                            <output expression="Hari" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Udah tau uangnya ga cukup masih nanyaa hedeh&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Hari == &quot;Jumat&quot;">
+                        <then>
+                            <if expression="Uang &gt;= 45000">
+                                <then>
+                                    <output expression="&quot;Cie uangnya cukup buat beli tiket di hari Jumat kiwkiw&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Udah tau uangnya ga cukup masih nanyaa hedeh&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="Hari == &quot;Sabtu&quot;">
+                                <then>
+                                    <if expression="Uang &gt;= 50000">
+                                        <then>
+                                            <output expression="&quot;Cie uangnya cukup buat beli tiket di hari Sabtu kiwkiw&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Udah tau uangnya ga cukup masih nanyaa hedeh&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="Hari == &quot;Minggu&quot;">
+                                        <then>
+                                            <if expression="Uang &gt;= 55000">
+                                                <then>
+                                                    <output expression="&quot;Cie uangnya cukup buat beli tiket di hari Minggu kiwkiw&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Udah tau uangnya ga cukup masih nanyaa hedeh&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
