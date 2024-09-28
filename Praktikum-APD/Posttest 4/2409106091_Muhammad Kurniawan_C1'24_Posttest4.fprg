@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106091_Muhammad Kurniawan_C1'24"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-28 10:16:32 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtU1NJT1VQMk87MjAyNC0wOS0yODswNTozMjo0MyBBTTsyNzEw"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtU1NJT1VQMk87MjAyNC0wOS0yODsxMDoxNjozMiBBTTs0OzI4MTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Username, Hari, Lanjut" type="String" array="False" size=""/>
+            <declare name="Password, Loop, Uang, Hargatiket" type="Integer" array="False" size=""/>
+            <assign variable="Username" expression="&quot;Muhammad Kurniawan&quot;"/>
+            <assign variable="Password" expression="91"/>
+            <assign variable="Loop" expression="0"/>
+            <while expression="Loop &lt; 3">
+                <output expression="&quot;Masukan username anda&quot;" newline="True"/>
+                <input variable="Username"/>
+                <output expression="&quot;Masukan password anda&quot;" newline="True"/>
+                <input variable="Password"/>
+                <if expression="Username == &quot;Muhammad Kurniawan&quot; and Password == 91">
+                    <then>
+                        <output expression="&quot;Mau lanjut apa ga nihh??&quot;" newline="True"/>
+                        <input variable="Lanjut"/>
+                        <if expression="Lanjut == &quot;Ga lanjut ah&quot;">
+                            <then>
+                                <output expression="&quot;Program di hentikan&quot;" newline="True"/>
+                                <breakpoint expression="" always="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Nice, lanjut ke tahap selanjutnya&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <output expression="&quot;Masukan hari&quot;" newline="True"/>
+                        <input variable="Hari"/>
+                        <output expression="&quot;Uang yang anda miliki&quot;" newline="True"/>
+                        <input variable="Uang"/>
+                        <if expression="Hari == &quot;Senin&quot; or Hari == &quot;Selasa&quot; or Hari == &quot;Rabu&quot; or Hari == &quot;Kamis&quot;">
+                            <then>
+                                <if expression="Uang &gt;= 40000">
+                                    <then>
+                                        <output expression="&quot;Ciee uangnya cukup untuk beli tikett di hari:&quot;" newline="True"/>
+                                        <output expression="Hari" newline="True"/>
+                                        <output expression="&quot;Kiww kiwww&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Hadehhh, sudah tau ga cukup masih nanya&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="Hari == &quot;Jumat&quot;">
+                                    <then>
+                                        <if expression="Uang &gt;= 45000">
+                                            <then>
+                                                <output expression="&quot;Ciee uangnya cukup untuk beli tikett di hari jumat kiwkiwwww&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Hadehhh, sudah tau ga cukup masih nanya&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <if expression="Hari == &quot;Sabtu&quot;">
+                                            <then>
+                                                <if expression="Uang &gt;= 50000">
+                                                    <then>
+                                                        <output expression="&quot;Ciee uangnya cukup untuk beli tikett di hari sabtu kiwkiwwww&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <output expression="&quot;Hadehhh, sudah tau ga cukup masih nanya&quot;" newline="True"/>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <if expression="Hari == &quot;Minggu&quot;">
+                                                    <then>
+                                                        <if expression="Uang &gt;= 55000">
+                                                            <then>
+                                                                <output expression="&quot;Ciee uangnya cukup untuk beli tikett di hari minggu kiwkiwwww&quot;" newline="True"/>
+                                                            </then>
+                                                            <else>
+                                                                <output expression="&quot;Hadehhh, sudah tau ga cukup masih nanya&quot;" newline="True"/>
+                                                            </else>
+                                                        </if>
+                                                    </then>
+                                                    <else>
+                                                        <output expression="&quot;Hari apasih yg anda masukan gajelas bgttt ??!!&quot;" newline="True"/>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                        <breakpoint expression="" always="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Username atau Password yang anda masukan salah. Mau lanjut apa nda nih??&quot;" newline="True"/>
+                        <input variable="Lanjut"/>
+                        <if expression="Lanjut == &quot;Iya&quot;">
+                            <then>
+                                <output expression="&quot;Program di hentikan&quot;" newline="True"/>
+                                <breakpoint expression="" always="True"/>
+                            </then>
+                            <else>
+                                <assign variable="Loop" expression="Loop + 1"/>
+                                <output expression="&quot;Anda sudah mencoba sebanyak&quot;" newline="True"/>
+                                <output expression="Loop" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
